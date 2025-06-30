@@ -1,4 +1,4 @@
-// DevLife Portal MongoDB - Static Content for 6 Projects
+// DevLife Portal MongoDB - Static Content for 6 Projects - PRODUCTION READY
 db = db.getSiblingDB('devlife');
 
 // 🎰 Code Casino - Code snippets 
@@ -133,7 +133,7 @@ db.meeting_excuses.insertMany([
   }
 ]);
 
-// 🏠 Daily horoscopes for developers
+// 🏠 Daily horoscopes for developers (English zodiac signs)
 db.horoscopes.insertMany([
   {
     zodiac_sign: "Aries",
@@ -248,3 +248,4 @@ print("  • dating_profiles: " + db.dating_profiles.countDocuments() + " docume
 print("  • meeting_excuses: " + db.meeting_excuses.countDocuments() + " documents");
 print("  • horoscopes: " + db.horoscopes.countDocuments() + " documents");
 print("  • code_challenges: " + db.code_challenges.countDocuments() + " documents");
+print("🌟 All zodiac signs use English names for compatibility with .NET backend");
